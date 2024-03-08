@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 import requests
-from .prompter import create_prompt
+from prompter import create_prompt
 
 app = Flask(__name__)
 
@@ -62,3 +62,6 @@ def prompt():
 
     result = create_prompt(json_data)
     return render_template('index.html', result=result)
+
+if __name__ == "__main__":
+    app.run(debug=True)
