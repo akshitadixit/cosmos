@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Video Prompt</title>
+  </head>
+  <body>
+    <h1>Product Details</h1>
+    <form action="/prompt" method="post">
+      <label for="sku_id">Enter the SKU ID:</label><br>
+      <input type="text" id="sku_id" name="sku_id" required><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <!-- Display the string returned in a jinja text box -->
+    <p>{{ result }}</p>
+  </body>
+</html>
